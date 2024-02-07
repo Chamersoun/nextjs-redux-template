@@ -1,0 +1,44 @@
+.tooltip-toggle {
+  &--desktop {
+    height: max-content;
+    display: none;
+
+    @include laptop {
+      display: flex;
+    }
+  }
+
+  &--mobile {
+    display: flex;
+    height: max-content;
+
+    @include laptop {
+      display: none;
+    }
+  }
+}
+
+.tooltip-content {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 3px;
+
+  &::after {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--black);
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+  }
+}

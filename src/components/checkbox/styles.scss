@@ -1,0 +1,23 @@
+.checkbox-field {
+  position: relative;
+
+  &__wrapper {
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    &.is-disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--red);
+  }
+}

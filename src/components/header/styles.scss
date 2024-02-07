@@ -1,0 +1,38 @@
+.app-header {
+  height: 60px;
+  width: 100%;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+
+  @media screen and (max-width: 1024px) {
+    background-color: var(--black);
+  }
+
+  h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__mobile-logo {
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

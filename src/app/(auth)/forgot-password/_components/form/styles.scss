@@ -1,0 +1,18 @@
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  width: 100%;
+
+  @include laptop {
+    width: min(100%, 38rem);
+  }
+
+  &__field {
+    width: 100%;
+  }
+
+  &__submit-btn {
+    margin-top: 1.6rem;
+  }
+}

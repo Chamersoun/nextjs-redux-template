@@ -1,0 +1,17 @@
+.select-field {
+  position: relative;
+
+  &__label {
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--red);
+  }
+}

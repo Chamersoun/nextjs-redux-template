@@ -1,0 +1,11 @@
+.dashboard-page {
+  h1 {
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.with-fade-animation {
+  animation: fade-animation 0.5s ease;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
